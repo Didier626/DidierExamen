@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F1F5F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar Empleado"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1E293B"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo: Nombre -->
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:backgroundTint="#3B82F6"
+            android:inputType="textPersonName" />
+
+        <!-- Campo: ID -->
+        <EditText
+            android:id="@+id/edtID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:backgroundTint="#3B82F6"
+            android:inputType="text" />
+
+        <!-- Campo: Departamento -->
+        <EditText
+            android:id="@+id/edtDepartamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Departamento"
+            android:backgroundTint="#3B82F6"
+            android:inputType="text" />
+
+        <!-- Campo: Salario base -->
+        <EditText
+            android:id="@+id/edtSalarioBase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Salario Base"
+            android:backgroundTint="#3B82F6"
+            android:inputType="numberDecimal" />
+
+        <!-- Campo: Años de experiencia -->
+        <EditText
+            android:id="@+id/edtExperiencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Años de experiencia"
+            android:backgroundTint="#3B82F6"
+            android:inputType="number" />
+
+        <!-- Tipo de empleado -->
+        <Spinner
+            android:id="@+id/spinnerTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!-- 📘 Bonificación anual (tiempo completo) -->
+        <EditText
+            android:id="@+id/edtBonificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bonificación Anual"
+            android:inputType="numberDecimal"
+            android:visibility="gone" />
+
+        <!-- 🕒 Medio tiempo -->
+        <EditText
+            android:id="@+id/edtHoras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horas semanales"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edtTarifaHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tarifa por hora"
+            android:inputType="numberDecimal"
+            android:visibility="gone" />
+
+        <!-- 🛠 Contratista -->
+        <EditText
+            android:id="@+id/edtDuracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duración del contrato (meses)"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edtTarifaProyecto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tarifa del proyecto"
+            android:inputType="numberDecimal"
+            android:visibility="gone" />
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Empleado"
+            android:textAllCaps="false"
+            android:backgroundTint="#3B82F6"
+            android:textColor="#FFF"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
